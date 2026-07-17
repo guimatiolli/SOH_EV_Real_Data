@@ -1,0 +1,65 @@
+{
+    "random_state": 42,
+    "outer_cv_splits": 5,
+    "inner_oof_splits": 5,
+    "global_model": {
+        "n_estimators": 1200,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "bootstrap": false,
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "expert_a_xgboost": {
+        "n_estimators": 1200,
+        "learning_rate": 0.02,
+        "max_depth": 6,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.05,
+        "reg_lambda": 1.5,
+        "objective": "reg:squarederror",
+        "eval_metric": "rmse",
+        "tree_method": "hist",
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "expert_b_c_extratrees": {
+        "n_estimators": 1000,
+        "max_depth": null,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "max_features": 1.0,
+        "bootstrap": false,
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "gate_xgboost": {
+        "n_estimators": 1200,
+        "learning_rate": 0.02,
+        "max_depth": 6,
+        "min_child_weight": 2,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "reg_alpha": 0.05,
+        "reg_lambda": 1.5,
+        "objective": "multi:softprob",
+        "num_class": 3,
+        "eval_metric": "mlogloss",
+        "tree_method": "hist",
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "router_boundaries": {
+        "a_b": 0.9425,
+        "b_c": 0.9725
+    },
+    "expert_class_names": {
+        "0": "A_XGBoost_Baixo",
+        "1": "B_ExtraTrees_Intermediario",
+        "2": "C_ExtraTrees_Alto"
+    }
+}

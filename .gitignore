@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Environment
+.env
+.venv/
+venv/
+
+# Python cache
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Model outputs
+OUTPUT/models/
+OUTPUT/folds/
+OUTPUT/predictions/
+
+# Large files
+*.pkl
+*.joblib
+*.pickle

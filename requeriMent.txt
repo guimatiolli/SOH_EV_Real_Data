@@ -1,0 +1,11 @@
+# ==========================================================
+# SOH Estimation from Real EV Charging Events
+# Python 3.11
+# ==========================================================
+
+numpy==2.0.1
+pandas
+scikit-learn==1.8.0
+xgboost
+joblib
+openpyxl==3.1.5
