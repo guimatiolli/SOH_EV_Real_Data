@@ -1,36 +1,132 @@
+# =========================================================
 # Python
+# =========================================================
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 
-# Jupyter
+# =========================================================
+# Jupyter / IPython
+# =========================================================
 .ipynb_checkpoints/
+profile_default/
+ipython_config.py
 
-# VS Code
-.vscode/
-
-# PyCharm
-.idea/
-
-# Environment
+# =========================================================
+# Ambientes virtuais e variáveis de ambiente
+# =========================================================
 .env
+.env.*
+.envrc
 .venv/
 venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
 
-# Python cache
+# =========================================================
+# IDEs e editores
+# =========================================================
+.vscode/
+.idea/
+.spyderproject
+.spyproject
+.ropeproject
+tempCodeRunnerFile.py
+
+# =========================================================
+# Cache, testes e análise estática
+# =========================================================
 .pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+coverage.xml
+nosetests.xml
+*.cover
+*.py.cover
 
-# macOS
+# =========================================================
+# Build e empacotamento
+# =========================================================
+build/
+dist/
+downloads/
+develop-eggs/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# =========================================================
+# Sistema operacional
+# =========================================================
 .DS_Store
-
-# Windows
 Thumbs.db
+desktop.ini
 
-# Model outputs
+# =========================================================
+# Arquivos temporários e logs
+# =========================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# =========================================================
+# Modelos e arquivos binários grandes
+# =========================================================
+*.pkl
+*.pickle
+*.joblib
+
+# =========================================================
+# Saídas grandes ou regeneráveis
+# =========================================================
 OUTPUT/models/
 OUTPUT/folds/
 OUTPUT/predictions/
 
-# Large files
-*.pkl
-*.joblib
-*.pickle
+# =========================================================
+# Outros diretórios de ferramentas
+# =========================================================
+.pdm-python
+.pdm-build/
+.pixi/
+.abstra/
+.scrapy/
+.pybuilder/
+target/
+docs/_build/
+site/
+streamlit/secrets.toml
+.streamlit/secrets.toml
+cython_debug/
